@@ -1,0 +1,9 @@
+name: apt
+os: Debian, Ubuntu, Raspbian
+os_family: Debian
+version: 1.0.0rc
+release: 1
+minimum_version: 2016.11
+summary: Apt formula
+description: Formula to manage apt systems
+top_level_dir: apt
