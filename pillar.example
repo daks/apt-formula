@@ -89,12 +89,12 @@ apt:
       url: http://deb.debian.org/debian
       type: [source]
       comps: [main, contrib, non-free]
-    dropbox:
-      distro: jessie
-      url: http://linux.dropbox.com/debian
-      arch: [i386, amd64]
-      keyid: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-      keyserver: hkp://pgp.mit.edu:80
+#    dropbox:
+#      distro: jessie
+#      url: http://linux.dropbox.com/debian
+#      arch: [i386, amd64]
+#      keyid: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+#      keyserver: hkp://pgp.mit.edu:80
     intranet:
       distro: stretch
       url: http://intranet.example.org
