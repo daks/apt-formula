@@ -59,8 +59,6 @@ verifier:
   # cli, documentation, html, progress, json, json-min, json-rspec, junit
   reporter:
     - cli
-  inspec_tests:
-    - path: test/integration/default
 
 suites:
   - name: repositories
@@ -70,10 +68,17 @@ suites:
           '*':
             - apt.repositories
             - apt.update
+    verifier:
+      inspec_tests:
+        - path: test/integration/repositories
+
   - name: preferences
     provisioner:
       state_top:
         base:
           '*':
             - apt.preferences
+    verifier:
+      inspec_tests:
+        - path: test/integration/preferences
 
