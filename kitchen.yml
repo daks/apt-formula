@@ -53,8 +53,7 @@ provisioner:
     apt.sls: pillar.example
 
 verifier:
-  # https://www.inspec.io/
-  name: inspec
+  name: serverspec
   sudo: true
   # cli, documentation, html, progress, json, json-min, json-rspec, junit
   reporter:
@@ -69,7 +68,7 @@ suites:
             - apt.repositories
             - apt.update
     verifier:
-      inspec_tests:
+      serverspec_tests:
         - path: test/integration/repositories
 
   - name: preferences
@@ -79,6 +78,6 @@ suites:
           '*':
             - apt.preferences
     verifier:
-      inspec_tests:
+      serverspec_tests:
         - path: test/integration/preferences
 
